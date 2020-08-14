@@ -1,0 +1,11 @@
+.mdc-drawer__title, .mdc-list-item, .mdc-drawer__subtitle {
+    color: white !important;
+  }
+  
+  .mdc-drawer--modal {
+    background-color: #1e1e1e !important;
+  }
+  
+  .mdc-top-app-bar {
+    background-color: #282c34 !important;
+  }

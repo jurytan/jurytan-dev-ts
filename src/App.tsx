@@ -12,19 +12,8 @@ import {
 } from '@rmwc/card';
 import { SimpleTopAppBar, TopAppBarFixedAdjust } from '@rmwc/top-app-bar/dist';
 import { Typography } from '@rmwc/typography';
+import NavDrawer from './components/NavDrawer';
 import  { ThemeProvider } from '@rmwc/theme/dist';
-import { 
-  Drawer,
-  DrawerHeader, 
-  DrawerTitle, 
-  DrawerSubtitle, 
-  DrawerContent,
-} from '@rmwc/drawer/dist';
-import {  
-  List, 
-  ListItem
-} from '@rmwc/list/dist';
-// import logo from './logo.svg';
 import './App.css';
 
 // Adding styles to page -- not sure if this is needed yet
@@ -39,32 +28,10 @@ function App() {
 
   return (
       <div className="App">
-        <ThemeProvider options={{
-          onSurface: '#FFF', // text color
-          textPrimaryOnDark: '#FFF',
-        }}>
-          <Drawer 
-            className="Nav"
-            modal 
-            open={open} 
-            onClose={() => setOpen(false)}
-            style={{background: '#1e1e1e'}}
-          >
-            <DrawerHeader>
-              <DrawerTitle style={{color: 'white'}}>Whoa</DrawerTitle>
-              <DrawerSubtitle style={{color: 'white'}}>Wassup?</DrawerSubtitle>
-            </DrawerHeader>
-            <DrawerContent>
-              <List>
-                <ListItem>Portfolio</ListItem>
-                <ListItem>Projects</ListItem>
-                <ListItem>Timeline</ListItem>
-                <ListItem>Blog</ListItem>
-                <ListItem>Contact Me!</ListItem>
-              </List>
-            </DrawerContent>
-          </Drawer>
-        </ThemeProvider>
+        <NavDrawer
+          open={open}
+          setOpen={(value) => setOpen(value)}
+        />
         <ThemeProvider options={{
           primary: '#282c34',
         }}>

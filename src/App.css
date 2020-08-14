@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.mdc-card {
+  /* border-radius: 1.2rem !important; */
+  border-top-left-radius: 3rem !important;
+  border-top-right-radius: 3rem !important;
+  width: 100% !important;
+  min-width: 3em !important;
+  max-width: 30em !important;
+  margin-top: 2rem;
+}
+
+/* .mdc-drawer__title, .mdc-list-item, .mdc-drawer__subtitle {
+  color: white !important;
+}
+
+.mdc-drawer--modal {
+  background-color: #1e1e1e !important;
+}
+
+.mdc-top-app-bar {
+  background-color: #282c34 !important;
+} */
