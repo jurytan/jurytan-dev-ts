@@ -122,6 +122,24 @@ function App() {
             </CardActions>
           </Card>
         </header>
+        <Typography
+          className="backgroundText"
+          use="headline1"
+          tag="h1"
+          // theme="textSecondaryOnBackground"
+          style={{  }}
+        >
+          jurytan
+        </Typography>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
   );
   

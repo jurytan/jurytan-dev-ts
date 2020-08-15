@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,14 +47,38 @@
   margin-top: 2rem;
 }
 
-/* .mdc-drawer__title, .mdc-list-item, .mdc-drawer__subtitle {
-  color: white !important;
+.backgroundText {
+  white-space: no-wrap !important;
+  text-overflow: clip !important;
+  text-transform: uppercase !important;
+  text-align: right !important;
+  letter-spacing: .75rem !important;
+  font-weight: 500 !important;
+  color: #3d43508e !important;
+  z-index: -9000 !important;
+  position: fixed !important;
+  margin-top: -18%;
+  right: 0;
+  bottom: 0;
 }
 
-.mdc-drawer--modal {
-  background-color: #1e1e1e !important;
+@media all and (min-width: 960px) {
+  .backgroundText {
+    font-size: calc(150px + 2vmin) !important;
+    margin-right: -2.5%;
+  }
 }
 
-.mdc-top-app-bar {
-  background-color: #282c34 !important;
-} */
+@media all and (max-width: 959px) and (min-width: 600px) {
+  .backgroundText {
+    font-size: calc(100px + 2vmin) !important;
+    margin-right: -3.5%;
+  }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+  .backgroundText {
+    font-size: calc(50px + 2vmin) !important;
+    margin-right: -4.5%;
+  }
+}
