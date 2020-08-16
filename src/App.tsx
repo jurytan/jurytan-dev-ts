@@ -39,14 +39,6 @@ function App() {
             title=""
             navigationIcon
             onNav={() => setOpen(!open)}
-            // actionItems={[
-            //   {
-            //     icon: 'file_download',
-            //     onClick: () => console.log('Do Something')
-            //   },
-            //   { icon: 'print', onClick: () => console.log('Do Something') },
-            //   { icon: 'bookmark', onClick: () => console.log('Do Something') }
-            // ]}
           />
         </ThemeProvider>
         {/* <TopAppBarFixedAdjust />  // use this if you want to hide on scroll */}
@@ -66,7 +58,7 @@ function App() {
               marginTop: '-3rem'
             }}
           >
-            Software Engineer
+            SOFTWARE ENGINEER
           </Typography>
           <Button label="Hello Jurytan" theme="primary" />
           <Card style={{ width: '80%' }}>

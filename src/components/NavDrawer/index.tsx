@@ -7,6 +7,7 @@ import {
   DrawerContent,
 } from "@rmwc/drawer/dist";
 import { List, ListItem } from "@rmwc/list/dist";
+import { Icon } from "@rmwc/icon/dist";
 import "./NavDrawer.css";
 
 const NavDrawer : FunctionComponent<{open: boolean, setOpen: (value: boolean) => void}> = 
@@ -28,7 +29,13 @@ const NavDrawer : FunctionComponent<{open: boolean, setOpen: (value: boolean) =>
         <ListItem>Projects</ListItem>
         <ListItem>Timeline</ListItem>
         <ListItem>Blog</ListItem>
-        <ListItem>Contact Me!</ListItem>
+        <ListItem>
+          <Icon icon={{ 
+              icon: 'star',
+              strategy: 'ligature',
+          }} />  
+          Contact Me!
+        </ListItem>
       </List>
     </DrawerContent>
   </Drawer>

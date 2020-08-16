@@ -9,3 +9,8 @@
   .mdc-top-app-bar {
     background-color: #282c34 !important;
   }
+
+.material-icons {
+    margin-right: 5px;
+    font-size: 20px;
+  }

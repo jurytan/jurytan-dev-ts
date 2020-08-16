@@ -47,14 +47,14 @@
   margin-top: 2rem;
 }
 
+/* Inspired by this design: https://www.uplabs.com/posts/portfolio-2a48e74c-1995-48ee-a7f4-96a5b6e3e5f2 */
 .backgroundText {
-  white-space: no-wrap !important;
   text-overflow: clip !important;
   text-transform: uppercase !important;
   text-align: right !important;
   letter-spacing: .75rem !important;
   font-weight: 500 !important;
-  color: #3d43508e !important;
+  color: #353a4452 !important;
   z-index: -9000 !important;
   position: fixed !important;
   margin-top: -18%;
