@@ -9,7 +9,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-        <AppBar position="static">
+        <AppBar 
+          position="static"
+          color="transparent"
+          elevation={0}
+          sx={{ 
+            color: "#FFF"
+          }}
+        >
         <Toolbar>
           <IconButton
             size="large"
