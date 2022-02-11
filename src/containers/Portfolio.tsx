@@ -5,7 +5,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
 
 // Adding imports for fontsource
 import '@fontsource/roboto/300.css';
@@ -25,58 +25,60 @@ const bull = (
 export const Portfolio: FunctionComponent<{}> = () => {
   return (
     <div className="Portfolio">
-        <header className="App-header">
-          <Typography variant="h1">jurytan</Typography>
+        <Container maxWidth="md">
+          <header className="App-header">
+            <Typography variant="h1">jurytan</Typography>
+            <Typography
+              variant="h3"
+              sx={{
+                marginTop: "-3rem",
+              }}
+            >
+              SOFTWARE ENGINEER
+            </Typography>
+            <Button variant="text">Hello Jurytan</Button>
+            <Card sx={{ minWidth: 275 }}>
+              <CardContent>
+                <Typography
+                  sx={{ fontSize: 14 }}
+                  color="text.secondary"
+                  gutterBottom
+                >
+                  Word of the Day
+                </Typography>
+                <Typography variant="h5" component="div">
+                  be{bull}nev{bull}o{bull}lent
+                </Typography>
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  adjective
+                </Typography>
+                <Typography variant="body2">
+                  well meaning and kindly.
+                  <br />
+                  {'"a benevolent smile"'}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          </header>
           <Typography
-            variant="h3"
-            sx={{
-              marginTop: "-3rem",
-            }}
+            className="backgroundText"
+            variant="h1"
           >
-            SOFTWARE ENGINEER
+            jurytan
           </Typography>
-          <Button variant="text">Hello Jurytan</Button>
-          <Card sx={{ minWidth: 275 }}>
-            <CardContent>
-              <Typography
-                sx={{ fontSize: 14 }}
-                color="text.secondary"
-                gutterBottom
-              >
-                Word of the Day
-              </Typography>
-              <Typography variant="h5" component="div">
-                be{bull}nev{bull}o{bull}lent
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                adjective
-              </Typography>
-              <Typography variant="body2">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </header>
-        <Typography
-          className="backgroundText"
-          variant="h1"
-        >
-          jurytan
-        </Typography>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </Container>
     </div>
   );
 };
