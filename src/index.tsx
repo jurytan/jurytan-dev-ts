@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./utilities/constants";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -18,28 +19,6 @@ declare module "@mui/material/styles" {
     };
   }
 }
-
-export const theme = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-      main: "#24aee9",
-    },
-    secondary: {
-      main: "#e539ff",
-    },
-    text: {
-      primary: "#fff",
-    },
-    error: {
-      main: "#fff",
-    },
-    background: {
-      paper: "#37474F",
-      default: "#212121",
-    },
-  },
-});
 
 ReactDOM.render(
   <React.StrictMode>

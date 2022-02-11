@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import Container from "@mui/material/Container";
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
