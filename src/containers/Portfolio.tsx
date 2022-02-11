@@ -7,6 +7,12 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Paper from '@mui/material/Paper';
 
+// Adding imports for fontsource
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 const bull = (
   <Box
     component="span"
@@ -57,12 +63,12 @@ export const Portfolio: FunctionComponent<{}> = () => {
             </CardActions>
           </Card>
         </header>
-        {/* <Typography
-        className="backgroundText"
-        variant="h1"
-      >
-        jurytan
-      </Typography> */}
+        <Typography
+          className="backgroundText"
+          variant="h1"
+        >
+          jurytan
+        </Typography>
         <br />
         <br />
         <br />
