@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -20,7 +20,7 @@ declare module "@mui/material/styles" {
   }
 }
 
-export const theme = {
+export const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
@@ -39,9 +39,8 @@ export const theme = {
       paper: "#37474F",
       default: "#212121",
     },
-    type: "dark",
   },
-};
+});
 
 ReactDOM.render(
   <React.StrictMode>

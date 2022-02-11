@@ -25,7 +25,6 @@ const bull = (
 export const Portfolio: FunctionComponent<{}> = () => {
   return (
     <div className="Portfolio">
-      <Paper sx={{ bgcolor: 'Background.default' }}>
         <header className="App-header">
           <Typography variant="h1">jurytan</Typography>
           <Typography
@@ -78,7 +77,6 @@ export const Portfolio: FunctionComponent<{}> = () => {
         <br />
         <br />
         <br />
-      </Paper>
     </div>
   );
 };
