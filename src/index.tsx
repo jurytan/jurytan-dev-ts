@@ -4,7 +4,6 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Portfolio } from './containers/Portfolio';
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -45,7 +44,7 @@ export const theme = createTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Portfolio />
+      <App />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root"),

@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Portfolio } from "./containers/Portfolio";
-import { ThemeProvider } from "@mui/material/styles";
 import "./App.css";
 
 function App() {

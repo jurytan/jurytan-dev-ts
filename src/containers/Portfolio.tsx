@@ -37,8 +37,8 @@ export const Portfolio: FunctionComponent<{}> = () => {
               SOFTWARE ENGINEER
             </Typography>
             <Button variant="text">Hello Jurytan</Button>
-            <Card sx={{ minWidth: 275 }}>
-              <CardContent>
+            <Card sx={{ minWidth: 275, borderRadius: 5 }}>
+              <CardContent sx={{ padding: 4 }} >
                 <Typography
                   sx={{ fontSize: 14 }}
                   color="text.secondary"
@@ -59,7 +59,7 @@ export const Portfolio: FunctionComponent<{}> = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" sx={{ pb: 1, pl: 2 }}>Learn More</Button>
               </CardActions>
             </Card>
           </header>
