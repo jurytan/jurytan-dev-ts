@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from "@mui/material/styles";
-import { theme } from "./utilities/constants";
+import { theme } from "./utilities/Constants";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
