@@ -6,7 +6,7 @@ export const Header = () => {
           <Typography
             variant="h1"
             sx={{ 
-              fontFamily: "roboto",
+              fontFamily: "Product Sans",
               fontSize: "5rem",
               pb: "6rem",
              }}
