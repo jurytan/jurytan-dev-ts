@@ -41,7 +41,9 @@ export const Skills = () => {
             Skills
         </Typography>
         <Paper
+            elevation={0}
             sx={{
+            background: 'none',
             display: 'flex',
             justifyContent: 'center',
             flexWrap: 'wrap',
