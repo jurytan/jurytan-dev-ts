@@ -8,13 +8,16 @@ import TimelineDot from '@mui/lab/TimelineDot';
 interface JobHistoryItemProps {
     companyName: string,
     last?: boolean,
+    image?: string,
 }
 
 export const JobHistoryItem = (props : JobHistoryItemProps) => {
     return (
         <TimelineItem>
             <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot>
+                    {props.image && <img src={props.image} width={15} />}
+                </TimelineDot>
                 {!props.last && <TimelineConnector />}
             </TimelineSeparator>
             <TimelineContent>

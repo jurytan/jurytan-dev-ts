@@ -2,12 +2,9 @@ import * as React from 'react';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
 import { JobHistoryItem } from './JobHistoryItem';
+
+import google_logo from '../images/google.png';
 
 export const JobHistory = () => { 
     const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -22,7 +19,7 @@ export const JobHistory = () => {
         <CardContent sx={{ padding: 4 }}>
             <Timeline position="alternate">
                 <JobHistoryItem companyName='Grubhub'/>
-                <JobHistoryItem companyName='Google'/>
+                <JobHistoryItem companyName='Google' image={google_logo}/>
                 <JobHistoryItem companyName='Doordash'/>
                 <JobHistoryItem companyName='Model N'/>
                 <JobHistoryItem companyName='Rutgers' last={true}/>

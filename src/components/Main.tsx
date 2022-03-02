@@ -52,7 +52,7 @@ export const Main = () => {
       <br />
       <Typography
         variant="h3"
-        sx={{ fontFamily: "Product Sans",}}
+        sx={{ fontFamily: "Product Sans", textalign:"right"}}
         color="text.secondary"
         gutterBottom
       >
