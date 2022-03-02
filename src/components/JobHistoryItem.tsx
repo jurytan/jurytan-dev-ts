@@ -15,12 +15,13 @@ export const JobHistoryItem = (props : JobHistoryItemProps) => {
     return (
         <TimelineItem>
             <TimelineSeparator>
-                <TimelineDot>
-                    {props.image && <img src={props.image} width={15} />}
+                <TimelineDot sx={{ width: 20, height: 20, aspectRatio: 1 }}>
+                    {props.image && 
+                        <img src={props.image} height={20} />}
                 </TimelineDot>
                 {!props.last && <TimelineConnector />}
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent sx={{ paddingTop: 2 }}>
                 {props.companyName}
             </TimelineContent>
         </TimelineItem>

@@ -1,8 +1,8 @@
 import Container from "@mui/material/Container";
-import { Header } from "../components/Header";
-import { Main } from "../components/Main";
+import { Header } from "./Header";
+import { Main } from "./Main";
 import { BackgroundFooter } from "../components/BackgroundFooter";
-import { Intro } from "../components/Intro";
+import { Intro } from "./Intro";
 
 // Adding imports for fontsource
 import "@fontsource/roboto/300.css";

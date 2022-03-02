@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 import { JobHistory } from "./JobHistory";
+import { Skills } from "./Skills";
 
 const bull = (
   <Box
@@ -50,15 +51,10 @@ export const Main = () => {
         </CardActions>
       </Card>
       <br />
-      <Typography
-        variant="h3"
-        sx={{ fontFamily: "Product Sans", textalign:"right"}}
-        color="text.secondary"
-        gutterBottom
-      >
-        Job History
-      </Typography>
       <JobHistory />
+      <br />
+      <Skills />
+      <br />
     </div>
   );
 };
