@@ -1,3 +1,4 @@
+import Avatar from "@mui/material/Avatar";
 import Link from '@mui/material/Link';
 import PropTypes from 'prop-types';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -18,14 +19,14 @@ export const JobHistoryItem = (props : JobHistoryItemProps) => {
         <TimelineItem>
             <TimelineSeparator>
                 <Link href={props.website}>
-                    <TimelineDot sx={{ width: 20, height: 20, aspectRatio: 1 }}>
+                    <TimelineDot sx={{ width: 24, height: 24, aspectRatio: 1 }}>
                         {props.image && 
-                            <img src={props.image} height={20} />}
+                            <Avatar src={props.image} sx={{ width: 24, height: 24 }}/>}
                     </TimelineDot>
                 </Link>
                 {!props.last && <TimelineConnector />}
             </TimelineSeparator>
-            <TimelineContent sx={{ paddingTop: 2 }}>
+            <TimelineContent sx={{ paddingTop: 2.5 }}>
                 <Link 
                     href={props.website}
                     underline='none'
