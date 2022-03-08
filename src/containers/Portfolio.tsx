@@ -9,6 +9,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { Footer } from "./Footer";
 
 export const Portfolio = () => {
   return (
@@ -17,6 +18,7 @@ export const Portfolio = () => {
         <Header />
         <Intro />
         <Main />
+        <Footer />
         <BackgroundFooter />
       </Container>
     </div>
