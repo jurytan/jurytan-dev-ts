@@ -5,9 +5,10 @@ import Timeline from '@mui/lab/Timeline';
 import { Typography } from "@mui/material";
 import { JobHistoryItem } from '../components/JobHistoryItem';
 
+import doordash_logo from '../images/doordash.png';
 import google_logo from '../images/google.png';
 import grubhub_logo from '../images/grubhub.png';
-import doordash_logo from '../images/doordash.png';
+import modeln_logo from '../images/modeln.jpg';
 import rutgers_logo from '../images/rutgers.png';
 
 export const JobHistory = () => { 
@@ -45,6 +46,7 @@ export const JobHistory = () => {
                     website='https://doordash.com' />
                   <JobHistoryItem 
                     companyName='Model N' 
+                    image={modeln_logo}
                     website='https://modeln.com' />
                   <JobHistoryItem 
                     companyName='Rutgers' 
