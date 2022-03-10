@@ -19,7 +19,7 @@ export const JobHistoryItem = (props : JobHistoryItemProps) => {
         <TimelineItem>
             <TimelineSeparator>
                 <Link href={props.website}>
-                    <TimelineDot sx={{ width: 24, height: 24, aspectRatio: 1 }}>
+                    <TimelineDot>
                         {props.image && 
                             <Avatar src={props.image} sx={{ width: 24, height: 24 }}/>}
                     </TimelineDot>
