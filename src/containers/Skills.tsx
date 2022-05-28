@@ -61,6 +61,7 @@ export const Skills = () => {
                 <Chip
                     icon={icon}
                     label={data.label}
+                    variant="outlined"
                 />
                 </ListItem>
             );
