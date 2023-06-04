@@ -33,26 +33,36 @@ export const JobHistory = () => {
           <CardContent sx={{ padding: 4 }}>
               <Timeline position="alternate">
                   <JobHistoryItem 
-                    companyName='Grubhub' 
+                    companyName='Grubhub'
                     image={grubhub_logo}
-                    website='https://grubhub.com' />
+                    website='https://grubhub.com' 
+                    title={''} 
+                    description={''} />
                   <JobHistoryItem 
-                    companyName='Google' 
+                    companyName='Google'
                     image={google_logo}
-                    website='https://google.com' />
+                    website='https://google.com' 
+                    title={''} 
+                    description={''} />
                   <JobHistoryItem 
-                    companyName='Doordash' 
+                    companyName='Doordash'
                     image={doordash_logo}
-                    website='https://doordash.com' />
+                    website='https://doordash.com' 
+                    title={''} 
+                    description={''} />
                   <JobHistoryItem 
-                    companyName='Model N' 
+                    companyName='Model N'
                     image={modeln_logo}
-                    website='https://modeln.com' />
+                    website='https://modeln.com' 
+                    title={''} 
+                    description={''} />
                   <JobHistoryItem 
-                    companyName='Rutgers' 
+                    companyName='Rutgers'
                     image={rutgers_logo}
                     website='https://rutgers.edu'
-                    last={true} />
+                    last={true} 
+                    title={''} 
+                    description={''} />
               </Timeline>
           </CardContent>
       </Card>
