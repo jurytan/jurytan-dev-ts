@@ -16,19 +16,21 @@ const ListItem = styled('li')(({ theme }) => ({
 
 export const Skills = () => {
     const [chipData, setChipData] = React.useState<readonly ChipData[]>([
-        { key: 0, label: 'Java 8' },
+        { key: 0, label: 'Java' },
         { key: 1, label: 'Python' },
         { key: 2, label: 'Apex (SFDC)' },
         { key: 3, label: 'React' },
         { key: 4, label: 'Typescript' },
-        { key: 5, label: 'Git' },
-        { key: 6, label: 'ES6' },
-        { key: 7, label: 'Flutter' },
-        { key: 8, label: 'Dart' },
-        { key: 9, label: 'gRPC' },
-        { key: 10, label: 'REST' },
-        { key: 11, label: 'Bash' },
-        { key: 12, label: 'SQL/PostgreSQL' },
+        { key: 5, label: 'Javascript' },
+        { key: 6, label: 'Git' },
+        { key: 7, label: 'ES6' },
+        { key: 8, label: 'Flutter' },
+        { key: 9, label: 'Dart' },
+        { key: 10, label: 'gRPC' },
+        { key: 11, label: 'REST' },
+        { key: 12, label: 'Bash' },
+        { key: 13, label: 'SQL/PostgreSQL' },
+        { key: 14, label: 'Cloud Pub/Sub' },
       ]);
 
     return (<>
