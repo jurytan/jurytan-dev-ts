@@ -19,7 +19,8 @@ export const Intro = () => {
             color="text.secondary"
             gutterBottom
           >
-            Hi! I'm <strong>Jurytan</strong>
+            <p style={{ margin: 0, fontSize: "30px", position: "relative", top: "20px" }}>hi, i'm</p>
+            jurytan
           </Typography>
         </Grid>
         <Grid item xs={12}>
