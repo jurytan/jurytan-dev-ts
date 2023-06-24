@@ -1,5 +1,4 @@
 import Container from "@mui/material/Container";
-// import { Header } from "./Header";
 import { Main } from "./Main";
 import { BackgroundFooter } from "../components/BackgroundFooter";
 import { Intro } from "./Intro";
@@ -17,11 +16,6 @@ export const Portfolio = () => {
   return (
     <div className="Portfolio">
       <Container maxWidth="md">
-            {/* <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <Header />
-              </Grid>
-            </Grid> */}
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
                 <Intro />
