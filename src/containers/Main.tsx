@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { JobHistory } from "./JobHistory";
 import { Skills } from "./Skills";
+import { Projects } from './Projects';
 
 export const Main = () => {
   return (
@@ -8,6 +8,8 @@ export const Main = () => {
       <JobHistory />
       <br />
       <Skills />
+      <br />
+      <Projects />
       <br />
     </div>
   );
