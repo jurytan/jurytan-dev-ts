@@ -22,16 +22,16 @@ export const Projects = () => {
                 Projects
             </Typography>
             <Grid container spacing={2}>
-                <Grid xs={6}>
+                <Grid xs={12} m={6}>
                     <Project title="STO Upcoming View" image={sto_upcoming_view} companyName='Grubhub' companyLogo={grubhub_logo} />
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs={12} m={6}>
                     <Project title="STO Self Edit/Cancel" image={sto_upcoming_view} companyName='Grubhub' companyLogo={grubhub_logo} />
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs={12} m={6}>
                     <Project title="Apigee Integrations" image={apigee_logo} companyName='Google' companyLogo={google_logo}/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs={12} m={6}>
                     <Project title="Project Baseline" image={project_baseline_logo} companyName='Google' companyLogo={google_logo}/>
                 </Grid>
             </Grid>
