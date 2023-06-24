@@ -3,7 +3,7 @@ import { Main } from "./Main";
 import { BackgroundFooter } from "../components/BackgroundFooter";
 import { Intro } from "./Intro";
 
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Unstable_Grid2';
 
 // Adding imports for fontsource
 import "@fontsource/roboto/300.css";
@@ -17,7 +17,7 @@ export const Portfolio = () => {
     <div className="Portfolio">
       <Container maxWidth="md">
             <Grid container spacing={2}>
-              <Grid item xs={12} md={6}>
+              <Grid xs={12} md={6}>
                 <Intro />
               </Grid>
             </Grid>

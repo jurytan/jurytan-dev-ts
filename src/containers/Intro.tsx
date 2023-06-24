@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
+import Grid from "@mui/material/Unstable_Grid2";
 import { WavePopover } from "../components/WavePopover";
 
 export const Intro = () => {
@@ -12,7 +12,7 @@ export const Intro = () => {
         justifyContent="space-evenly"
         alignItems="flex-end"
       >
-        <Grid item xs={12}>
+        <Grid xs={12}>
           <Typography
             variant="h2"
             sx={{ fontFamily: "Product Sans", textAlign: "right" }}
@@ -23,7 +23,7 @@ export const Intro = () => {
             jurytan
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid xs={12}>
           <Typography
             variant="body1"
             sx={{ fontFamily: "Product Sans", textAlign: "right" }}
@@ -34,7 +34,7 @@ export const Intro = () => {
             look around!
           </Typography>
         </Grid>
-        <Grid item xs={6} md={2}>
+        <Grid xs={6} md={2}>
           <WavePopover />
         </Grid>
       </Grid>
