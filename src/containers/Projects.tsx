@@ -34,7 +34,6 @@ export const Projects = () => {
                 <Grid xs={6}>
                     <Project title="Project Baseline" image={project_baseline_logo} companyName='Google' companyLogo={google_logo}/>
                 </Grid>
-                
             </Grid>
         </Container>
     );

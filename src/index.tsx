@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider, Theme, StyledEngineProvider } from "@mui/material/styles";
 import { theme } from "./utilities/Constants";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
+declare module '@mui/styles/defaultTheme' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -13,7 +20,7 @@ declare module "@mui/material/styles" {
     };
   }
   // allow configuration using `createTheme`
-  interface ThemeOptions {
+  interface DeprecatedThemeOptions {
     status?: {
       danger?: string;
     };
@@ -22,9 +29,11 @@ declare module "@mui/material/styles" {
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StyledEngineProvider>
   </React.StrictMode>,
   document.getElementById("root"),
 );
