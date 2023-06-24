@@ -23,7 +23,8 @@ export const JobHistory = () => {
     <>
       <Typography
         variant="h3"
-        sx={{ fontFamily: "Product Sans", textalign:"right"}}
+        justifyContent={"center"}
+        sx={{ fontFamily: "Product Sans", textalign:"center" }}
         color="text.secondary"
         gutterBottom
       >

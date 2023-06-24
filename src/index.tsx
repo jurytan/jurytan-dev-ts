@@ -7,10 +7,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-// declare module '@mui/styles/defaultTheme' {
-//   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-//   interface DefaultTheme extends Theme {}
-// }
+declare module '@mui/material/styles/' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
 
 
 declare module "@mui/material/styles" {

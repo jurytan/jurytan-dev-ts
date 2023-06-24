@@ -16,7 +16,7 @@ interface IProjectProps {
 
 export const Project = (props: IProjectProps) => {
     return (
-        <Card sx={{ minWidth: 275, borderRadius: 5 }}>
+        <Card sx={{ minWidth: 400, borderRadius: 5 }}>
             <CardActionArea>
                 <CardMedia 
                     component="img"
@@ -29,13 +29,11 @@ export const Project = (props: IProjectProps) => {
                     alt={`${props.companyName} + logo`}
                     src={props.companyLogo}
                     sx={{ float: 'right', top: -75, right: 20, width: 56, height: 56 }} />
-            <CardContent >
-                <Stack direction="row" alignItems="center" justifyContent="space-evenly">
-                    <Typography gutterBottom variant="h5" component="div">
+                <CardContent sx={{ display: 'flex', justifyContent: 'center', margin: '0 50px' }} >
+                    <Typography align="center" gutterBottom variant="h5" component="div" textAlign="center">
                         {props.title}
                     </Typography>
-                </Stack>
-            </CardContent>
+                </CardContent>
             </CardActionArea>
         </Card>
     );

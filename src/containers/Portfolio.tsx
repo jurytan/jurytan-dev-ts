@@ -21,8 +21,16 @@ export const Portfolio = () => {
                 <Intro />
               </Grid>
             </Grid>
-            <Main />
-            <Footer />
+            <Grid container spacing={2}>
+              <Grid xs={12}>
+                <Main />
+              </Grid>
+            </Grid>
+            <Grid container spacing={2}>
+              <Grid xs={12}>
+                <Footer />
+              </Grid>
+            </Grid>
             <BackgroundFooter />
       </Container>
     </div>

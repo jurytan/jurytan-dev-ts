@@ -12,16 +12,16 @@ import sto_upcoming_view from '../images/sto-upcoming-view.png';
 
 export const Projects = () => {
     return (
-        <Container maxWidth="md">
+        <Container maxWidth="md" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             <Typography
                 variant="h3"
-                sx={{ fontFamily: "Product Sans", textalign:"right"}}
+                sx={{ fontFamily: "Product Sans", textalign:"center" }}
                 color="text.secondary"
                 gutterBottom
             >
                 Projects
             </Typography>
-            <Grid container spacing={2}>
+            <Grid container spacing={4}>
                 <Grid xs={12} md={6}>
                     <Project title="STO Upcoming View" image={sto_upcoming_view} companyName='Grubhub' companyLogo={grubhub_logo} />
                 </Grid>
