@@ -10,7 +10,11 @@ function TransitionUp(props : TransitionProps) {
   return <Slide {...props} direction="up" />;
 }
 
-export const WavePopover = () => {
+type WavePopoverProps = {
+  className: string;
+}
+
+export const WavePopover = ({ className }: WavePopoverProps) => {
 
     const [open, setOpen] = React.useState(false);
   
@@ -28,7 +32,7 @@ export const WavePopover = () => {
 
 
     return (
-    <>
+    <div className={className}>
         <Button
             variant="text"
             sx={{
@@ -54,7 +58,7 @@ export const WavePopover = () => {
                 }}
             />
         </Snackbar>
-    </>
+    </div>
     );
 
 }

@@ -68,3 +68,12 @@
     margin-right: -4.5%;
   }
 }
+
+.wave-popover {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.wave-popover.show {
+  opacity: 1;
+}

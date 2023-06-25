@@ -3,8 +3,18 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { WavePopover } from "../components/WavePopover";
 import { FadingSection } from "../components/FadingSection";
 import { Fade } from "react-awesome-reveal";
+import { useEffect, useState } from "react";
 
 export const Intro = () => {
+
+  const [showPopover, setShowPopover] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopover(true);
+    }, 2500);
+  }, []);
+
   return (
     // <div className="intro">
     <div className="App-header">
@@ -44,9 +54,7 @@ export const Intro = () => {
               </Fade>
             </Grid>
             <Grid xs={6} md={2}>
-              <Fade delay={2.5e3} direction="down" triggerOnce>
-                <WavePopover />
-              </Fade>
+                <WavePopover className={showPopover ? "wave-popover show" : "wave-popover"} />
             </Grid>
           </Grid>
         </FadingSection>
