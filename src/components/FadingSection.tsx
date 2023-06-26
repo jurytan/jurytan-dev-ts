@@ -3,29 +3,28 @@ import React, { Component, useEffect } from "react";
 import PropTypes from 'prop-types';
 
 interface FadingSectionProps {
-    fadeStart: number, 
-    fadeEnd: number,
+    fadeOutStart: number, 
+    fadeOutEnd: number,
     children: React.ReactNode,
 }
 
-export const FadingSection = ({ fadeStart, fadeEnd, children }: FadingSectionProps) => {
+export const FadingSection = ({ fadeOutStart, fadeOutEnd, children }: FadingSectionProps) => {
     const [opacity, setOpacity] = React.useState(1);
 
     useEffect(() => {
         const handleScroll = () => {
-        
-        let opacity = 1;
-        if (window.scrollY >= fadeStart) {
-            opacity = 1 - (window.scrollY - fadeStart) / (fadeEnd - fadeStart);
-        }
+            let opacity = 1;
+            if (window.scrollY >= fadeOutStart) {
+                opacity = 1 - (window.scrollY - fadeOutStart) / (fadeOutEnd - fadeOutStart);
+            }
 
-        setOpacity(opacity < 0 ? 0 : opacity);
+            setOpacity(opacity < 0 ? 0 : opacity);
         };
 
         window.addEventListener("scroll", handleScroll);
 
         return () => {
-        window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
 
     }, []);
@@ -38,7 +37,7 @@ export const FadingSection = ({ fadeStart, fadeEnd, children }: FadingSectionPro
 };
 
 FadingSection.propTypes = {
-    fadeStart: PropTypes.number.isRequired,
-    fadeEnd: PropTypes.number.isRequired,
+    fadeOutStart: PropTypes.number.isRequired,
+    fadeOutEnd: PropTypes.number.isRequired,
     children: PropTypes.element.isRequired,
 }

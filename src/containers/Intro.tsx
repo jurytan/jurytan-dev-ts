@@ -16,9 +16,8 @@ export const Intro = () => {
   }, []);
 
   return (
-    // <div className="intro">
     <div className="App-header">
-        <FadingSection fadeStart={50} fadeEnd={300}>
+        <FadingSection fadeOutStart={25} fadeOutEnd={175}>
           <Grid
             container
             direction="column"

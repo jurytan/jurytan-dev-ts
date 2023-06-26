@@ -23,7 +23,7 @@ export const Project = (props: IProjectProps) => {
                     // height="300"
                     width="100%"
                     image={props?.image ?? "https://mui.com/static/images/cards/contemplative-reptile.jpg"}
-                    sx={{ objectFit: "contain" }}
+                    sx={{ objectFit: "cover", maxHeight: 300 }}
                 />
                 <Avatar 
                     alt={`${props.companyName} + logo`}

@@ -19,6 +19,49 @@ export const JobHistory = () => {
       setExpanded(isExpanded ? panel : false);
     };
 
+    const jobs = [
+      {
+        companyName: 'Grubhub',
+        image: grubhub_logo,
+        website: 'https://grubhub.com',
+        title: '',
+        description: '',
+        last: false
+      },
+      {
+        companyName: 'Google',
+        image: google_logo,
+        website: 'https://google.com',
+        title: '',
+        description: '',
+        last: false
+      },
+      {
+        companyName: 'DoorDash',
+        image: doordash_logo,
+        website: 'https://doordash.com',
+        title: '',
+        description: '',
+        last: false
+      },
+      {
+        companyName: 'Model N',
+        image: modeln_logo,
+        website: 'https://modeln.com',
+        title: '',
+        description: '',
+        last: false
+      },
+      {
+        companyName: 'Rutgers',
+        image: rutgers_logo,
+        website: 'https://rutgers.edu',
+        title: '',
+        description: '',
+        last: true
+      }
+  ];
+
     return (
     <>
       <Typography
@@ -33,37 +76,18 @@ export const JobHistory = () => {
       <Card sx={{ minWidth: 275, borderRadius: 5 }}>
           <CardContent sx={{ padding: 4 }}>
               <Timeline position="alternate">
-                  <JobHistoryItem 
-                    companyName='Grubhub'
-                    image={grubhub_logo}
-                    website='https://grubhub.com' 
-                    title={''} 
-                    description={''} />
-                  <JobHistoryItem 
-                    companyName='Google'
-                    image={google_logo}
-                    website='https://google.com' 
-                    title={''} 
-                    description={''} />
-                  <JobHistoryItem 
-                    companyName='Doordash'
-                    image={doordash_logo}
-                    website='https://doordash.com' 
-                    title={''} 
-                    description={''} />
-                  <JobHistoryItem 
-                    companyName='Model N'
-                    image={modeln_logo}
-                    website='https://modeln.com' 
-                    title={''} 
-                    description={''} />
-                  <JobHistoryItem 
-                    companyName='Rutgers'
-                    image={rutgers_logo}
-                    website='https://rutgers.edu'
-                    last={true} 
-                    title={''} 
-                    description={''} />
+                  {jobs.map((job) => {
+                    return (
+                      <JobHistoryItem
+                        companyName={job.companyName}
+                        image={job.image}
+                        website={job.website}
+                        title={job.title}
+                        description={job.description}
+                        last={job.last}
+                      />
+                    );
+                  })}
               </Timeline>
           </CardContent>
       </Card>
