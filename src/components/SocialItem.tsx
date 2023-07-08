@@ -1,26 +1,19 @@
-import Avatar from "@mui/material/Avatar";
 import PropTypes from 'prop-types';
 import Link from "@mui/material/Link";
-import { SvgIcon, createSvgIcon } from "@mui/material";
-import { ReactNode } from "react";
-import { ChildCare } from "@mui/icons-material";
+import { Avatar } from '@mui/material';
 
 
 interface SocialItemProps {
     name: string,
     url: string,
-    img: ReactNode
+    img: string
 }
 
 export const SocialItem = ({url, name, img}: SocialItemProps) => {
 
-    // const icon = createSvgIcon(img, name);
-
     return (
-        <Link href={url}>
-            {/* <SvgIcon sx={{ color: 'white' }}>
-                {icon}
-            </SvgIcon> */}
+        <Link href={url} aria-label={name}>
+            <Avatar variant="rounded" src={img} />
         </Link>
     );
 }
@@ -28,5 +21,5 @@ export const SocialItem = ({url, name, img}: SocialItemProps) => {
 SocialItem.propType = {
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-    children: PropTypes.element.isRequired,
+    img: PropTypes.string.isRequired,
 };
